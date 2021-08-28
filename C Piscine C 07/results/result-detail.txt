@@ -1,0 +1,108 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+lab1r3s11.42abudhabi.ae
+Darwin 19.6.0 x86_64
+$> date
+Sun Aug 22 04:27:26 +04 2021
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42abudhabi.ae:vogsphere/intra-uuid-82e09a9c-10d9-4182-8a6d-7bf317039523-3738714
+
+= Git history ==================================================================
+$> git -C /tmp/tmpYV9iay/user log --pretty='%H - %an, %ad : %s'
+b7c490d5276938fcba875abdff794576773caf7f - Mariam Alzaabi, Sun Aug 22 01:57:50 2021 +0400 : hopefully last time submitting
+
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpYV9iay/user
+total 8
+-rw-r--r--  1 root  wheel  457 Aug 22 04:27 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Aug 22 04:27 ex00
+drwxr-xr-x  3 root  wheel   96 Aug 22 04:27 ex01
+drwxr-xr-x  3 root  wheel   96 Aug 22 04:27 ex02
+drwxr-xr-x  3 root  wheel   96 Aug 22 04:27 ex03
+
+/tmp/tmpYV9iay/user/ex00:
+total 8
+-rw-r--r--  1 root  wheel  1181 Aug 22 04:27 ft_strdup.c
+
+/tmp/tmpYV9iay/user/ex01:
+total 8
+-rw-r--r--  1 root  wheel  1199 Aug 22 04:27 ft_range.c
+
+/tmp/tmpYV9iay/user/ex02:
+total 8
+-rw-r--r--  1 root  wheel  1279 Aug 22 04:27 ft_ultimate_range.c
+
+/tmp/tmpYV9iay/user/ex03:
+total 8
+-rw-r--r--  1 root  wheel  1845 Aug 22 04:27 ft_strjoin.c
+
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strdup.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strdup.c -o user_exe
+
+= Test 1 ===================================================
+$> ./ozshrxzl57mwet8pqdbt5lng
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_range.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_range.c -o user_exe
+
+= Test 1 ===================================================
+$> ./4cwsfckeozy47sqhoiiogqi4
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_ultimate_range.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_ultimate_range.c -o user_exe
+
+= Test 1 ===================================================
+$> ./sc1s9usqjsqifrgz8u058xcy
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strjoin.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strjoin.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./9s05l0ql5knw6kgtise0bz1r
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 15
+
+= ex04 =========================================================================
+Nothing turned in
+Grade: 0
+
+= ex05 =========================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 60 ==============================================================

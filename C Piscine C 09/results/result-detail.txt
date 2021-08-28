@@ -1,0 +1,263 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+lab3r3s9.42abudhabi.ae
+Darwin 19.6.0 x86_64
+$> date
+Wed Aug 25 21:33:30 +04 2021
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42abudhabi.ae:vogsphere/intra-uuid-ea165c6c-a5b5-4400-bc01-0abcbe193305-3738785
+
+= Git history ==================================================================
+$> git -C /tmp/tmpMqlyZI/user log --pretty='%H - %an, %ad : %s'
+aa51191a155d2323f6da8bdff58acbd3c63cc97c - Mariam Alzaabi, Wed Aug 25 07:04:00 2021 +0400 : C09
+
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpMqlyZI/user
+total 8
+-rw-r--r--  1 root  wheel  553 Aug 25 21:33 __GIT_HISTORY
+drwxr-xr-x  8 root  wheel  256 Aug 25 21:33 ex00
+drwxr-xr-x  3 root  wheel   96 Aug 25 21:33 ex01
+drwxr-xr-x  3 root  wheel   96 Aug 25 21:33 ex02
+
+/tmp/tmpMqlyZI/user/ex00:
+total 48
+-rw-r--r--  1 root  wheel   959 Aug 25 21:33 ft_putchar.c
+-rw-r--r--  1 root  wheel   979 Aug 25 21:33 ft_putstr.c
+-rw-r--r--  1 root  wheel  1073 Aug 25 21:33 ft_strcmp.c
+-rw-r--r--  1 root  wheel   989 Aug 25 21:33 ft_strlen.c
+-rw-r--r--  1 root  wheel   962 Aug 25 21:33 ft_swap.c
+-rw-r--r--  1 root  wheel  1066 Aug 25 21:33 libft_creator.sh
+
+/tmp/tmpMqlyZI/user/ex01:
+total 8
+-rw-r--r--  1 root  wheel  1371 Aug 25 21:33 Makefile
+
+/tmp/tmpMqlyZI/user/ex02:
+total 8
+-rw-r--r--  1 root  wheel  2720 Aug 25 21:33 ft_split.c
+
+= ex00 =========================================================================
+rm: *.o: No such file or directory
+rm: *.a: No such file or directory
+
+$> gcc -Wextra -Wall -Werror main.c -o user_exe -L. -lft
+
+$> ./user_exe
+$> diff -U 3 user_output test1.output | cat -e
+
+Diff OK :D
+Grade: 30
+
+= ex01 =========================================================================
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putstr.c
+ft_strcmp.c
+ft_strlen.c
+ft_swap.c
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putstr.c
+ft_strcmp.c
+ft_strlen.c
+ft_swap.c
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putstr.c
+ft_strcmp.c
+ft_strlen.c
+ft_swap.c
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+libft.a
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putchar.o
+ft_putstr.c
+ft_putstr.o
+ft_strcmp.c
+ft_strcmp.o
+ft_strlen.c
+ft_strlen.o
+ft_swap.c
+ft_swap.o
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+libft.a
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putchar.o
+ft_putstr.c
+ft_putstr.o
+ft_strcmp.c
+ft_strcmp.o
+ft_strlen.c
+ft_strlen.o
+ft_swap.c
+ft_swap.o
+sed: 1: "/unable to/d;ls -R | gr ...": extra characters at the end of l command
+ft_noway.o
+includes
+libft.a
+main.c
+srcs
+
+./includes:
+ft.h
+
+./srcs:
+ft_bla.c
+ft_bla.o
+ft_putchar.c
+ft_putchar.o
+ft_putstr.c
+ft_putstr.o
+ft_strcmp.c
+ft_strcmp.o
+ft_strlen.c
+ft_strlen.o
+ft_swap.c
+ft_swap.o
+
+$> diff -U 3 user_output test1.output | cat -e
+
+Diff OK :D
+Grade: 30
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_split.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_split.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./k8xrbazmyv8z1vnmcaemvqc1 "      " "        "
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./k3fvrh164t5rf4itkbgj7l9f "                                  " "    "
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./ryxxcmmb0f5u4sr44phzemf5 "RGKhfjI1X" "RGKhfjI1X"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./prk45z302mxvely2hlm9yzan "6eWo0VtDG" "6eWo0VtDG"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./m9zatakhtnvgdnlgrx780lgr "MKLwUXRc0k7dlg2  6       7Xu7WEybBJNhgcJ6bsyj" "0Xd7g"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./733y2si8845wahne7wwi1ce5 "CEKqZooNMh8iE2P  zge4Dv0mBFNVNcaeShwe" "0FxKqY2"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./4ufgh0flsvey1nhh0v01rts8 "RUCMAYuuSqqYjrfWDyFAiXBxTZvClEqdQ" "Yq5x"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./cbtiwqitpjpxk5v76jmvpg84 "fFUsNimxNSjPMervimY4dBB1ASu      oGbOy" "VrQKnWa"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./iqnx9vmolnnwti52x1ophmdz "54MGJtxB6wqUiYoUyVzfM6WpV9L4E" "tAGwOHa"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./f0xbrmlqb3vbqfyy833n0psd "m2keg84qkgRShlm2E0Kop6gd4xuSf7ScJQK      F8 uvcfYB0zN" "lJcXV"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./7js5yz1sdvcp7tegjg3c4toc "  gh  " " gh"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./tx8seio0y1j7brwg46lvx4vq "  gh  " " "
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./6v2kzllmuyoql29yn2kutc23 "4vU1tljQdV197WPXyJypwsBDrIvI2zFvXSnYTQXlLsI" ""
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+Grade: 40
+
+= Final grade: 100 =============================================================

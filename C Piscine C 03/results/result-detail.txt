@@ -1,0 +1,126 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+lab3r5s14.42abudhabi.ae
+Darwin 19.6.0 x86_64
+$> date
+Wed Aug 18 06:25:22 +04 2021
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42abudhabi.ae:vogsphere/intra-uuid-1fbb9f84-4a7c-4c72-8a03-8a62816ffe66-3729635
+
+= Git history ==================================================================
+$> git -C /tmp/tmpAfJJpa/user log --pretty='%H - %an, %ad : %s'
+e2f0495d73c4a1ad5ef0992120d05825adb7da0b - Mariam Alzaabi, Wed Aug 18 05:04:43 2021 +0400 : c03
+
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpAfJJpa/user
+total 8
+-rw-r--r--  1 root  wheel  685 Aug 18 06:25 __GIT_HISTORY
+drwxr-xr-x  4 root  wheel  128 Aug 18 06:25 ex00
+drwxr-xr-x  4 root  wheel  128 Aug 18 06:25 ex01
+drwxr-xr-x  4 root  wheel  128 Aug 18 06:25 ex02
+drwxr-xr-x  4 root  wheel  128 Aug 18 06:25 ex03
+drwxr-xr-x  4 root  wheel  128 Aug 18 06:25 ex04
+
+/tmp/tmpAfJJpa/user/ex00:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 06:25 .DS_Store
+-rw-r--r--  1 root  wheel  1094 Aug 18 06:25 ft_strcmp.c
+
+/tmp/tmpAfJJpa/user/ex01:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 06:25 .DS_Store
+-rw-r--r--  1 root  wheel  1151 Aug 18 06:25 ft_strncmp.c
+
+/tmp/tmpAfJJpa/user/ex02:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 06:25 .DS_Store
+-rw-r--r--  1 root  wheel  1142 Aug 18 06:25 ft_strcat.c
+
+/tmp/tmpAfJJpa/user/ex03:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 06:25 .DS_Store
+-rw-r--r--  1 root  wheel  1170 Aug 18 06:25 ft_strncat.c
+
+/tmp/tmpAfJJpa/user/ex04:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 06:25 .DS_Store
+-rw-r--r--  1 root  wheel  1296 Aug 18 06:25 ft_strstr.c
+
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcmp.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strcmp.c -o user_exe
+
+= Test 1 ===================================================
+$> ./sndo75cheqyncfxxrhyvf8ms
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strncmp.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strncmp.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./wrq4w61xqwhk7ibi0saydj7n
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcat.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strcat.c -o user_exe
+
+= Test 1 ===================================================
+$> ./6s0wxymh49roeptnx22cw4uu
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strncat.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strncat.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./smtpztepp3w1piapobcxy1e8
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 20
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strstr.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strstr.c -o user_exe
+
+= Test 1 ===================================================
+$> ./vup453aix284ojcez4hpeeyv
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 25
+
+= ex05 =========================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 75 ==============================================================

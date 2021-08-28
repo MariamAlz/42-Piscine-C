@@ -1,0 +1,6 @@
+Credentials cache: API:2B067D95-5ABC-43C3-B176-6C9193834720
+        Principal: maalzaab@42ABUDHABI.AE
+
+  Issued                Expires               Principal
+Aug  2 17:38:39 2021  Aug  3 03:38:39 2021  krbtgt/42ABUDHABI.AE@42ABUDHABI.AE
+Aug  2 17:38:41 2021  Aug  3 03:38:39 2021  HTTP/student-storage.42abudhabi.ae@42ABUDHABI.AE

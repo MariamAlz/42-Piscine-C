@@ -1,0 +1,160 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+lab1r4s8.42abudhabi.ae
+Darwin 19.6.0 x86_64
+$> date
+Wed Aug 25 00:58:41 +04 2021
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42abudhabi.ae:vogsphere/intra-uuid-805e8b1b-e2d3-4dec-a2b7-a4856c5a2f6f-3745888
+
+= Git history ==================================================================
+$> git -C /tmp/tmpQYzRIW/user log --pretty='%H - %an, %ad : %s'
+b01aecdc7eb87a9cb9b906d49b58deec6288fe8c - Mariam Alzaabi, Tue Aug 24 23:53:27 2021 +0400 : Shell01
+
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpQYzRIW/user
+total 8
+-rw-r--r--  1 root  wheel  512 Aug 25 00:58 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Aug 25 00:58 ex01
+drwxr-xr-x  3 root  wheel   96 Aug 25 00:58 ex02
+drwxr-xr-x  3 root  wheel   96 Aug 25 00:58 ex03
+drwxr-xr-x  3 root  wheel   96 Aug 25 00:58 ex04
+drwxr-xr-x  3 root  wheel   96 Aug 25 00:58 ex05
+drwxr-xr-x  3 root  wheel   96 Aug 25 00:58 ex06
+drwxr-xr-x  3 root  wheel   96 Aug 25 00:58 ex07
+drwxr-xr-x  3 root  wheel   96 Aug 25 00:58 ex08
+
+/tmp/tmpQYzRIW/user/ex01:
+total 8
+-rw-r--r--  1 root  wheel  44 Aug 25 00:58 print_groups.sh
+
+/tmp/tmpQYzRIW/user/ex02:
+total 8
+-rw-r--r--  1 root  wheel  52 Aug 25 00:58 find_sh.sh
+
+/tmp/tmpQYzRIW/user/ex03:
+total 8
+-rw-r--r--  1 root  wheel  36 Aug 25 00:58 count_files.sh
+
+/tmp/tmpQYzRIW/user/ex04:
+total 8
+-rw-r--r--  1 root  wheel  43 Aug 25 00:58 MAC.sh
+
+/tmp/tmpQYzRIW/user/ex05:
+total 8
+-rw-r--r--  1 root  wheel  2 Aug 25 00:58 "\?$*'MaRViN'*$?\"
+
+/tmp/tmpQYzRIW/user/ex06:
+total 8
+-rw-r--r--  1 root  wheel  36 Aug 25 00:58 skip.sh
+
+/tmp/tmpQYzRIW/user/ex07:
+total 8
+-rw-r--r--  1 root  wheel  293 Aug 25 00:58 r_dwssap.sh
+
+/tmp/tmpQYzRIW/user/ex08:
+total 8
+-rw-r--r--  1 root  wheel  156 Aug 25 00:58 add_chelou.sh
+
+= ex01 =========================================================================
+===========
+testing
+nobody,everyone,localaccounts,_lpoperator
+VS
+nobody,everyone,localaccounts,_lpoperator
+===========
+< le notre, > le votre
+groups: noob: no such user
+id: noob: no such user
+===========
+testing
+
+VS
+
+===========
+< our file, > your file
+ok
+
+Grade: 10
+
+= ex02 =========================================================================
+< our file, > your file
+ok
+
+Grade: 10
+
+= ex03 =========================================================================
+< our file, > your file
+ok
+
+Grade: 10
+
+= ex04 =========================================================================
+===========
+testing
+3c:7d:0a:03:34:39
+ac:de:48:00:11:22
+36:7d:da:b9:0f:5c
+14:7d:da:b9:0f:5c
+06:7d:da:b9:0f:5c
+82:89:80:a3:d4:00
+82:89:80:a3:d4:01
+36:74:8d:94:87:b4
+36:74:8d:94:87:b4
+82:89:80:a3:d4:00
+
+VS
+3c:7d:0a:03:34:39
+ac:de:48:00:11:22
+36:7d:da:b9:0f:5c
+14:7d:da:b9:0f:5c
+06:7d:da:b9:0f:5c
+82:89:80:a3:d4:00
+82:89:80:a3:d4:01
+36:74:8d:94:87:b4
+36:74:8d:94:87:b4
+82:89:80:a3:d4:00
+
+===========
+< le notre, > le votre
+ok
+
+Grade: 10
+
+= ex05 =========================================================================
+-rw-r--r--  1 deepthought  deepthought  2 Aug 24 20:58 "\?$*'MaRViN'*$?\"
+OK
+
+Grade: 15
+
+= ex06 =========================================================================
+ok
+
+Grade: 15
+
+= ex07 =========================================================================
+< our file, > your file
+< our file, > your file
+OK
+
+Grade: 15
+
+= ex08 =========================================================================
+OK
+
+Grade: 15
+
+= Final grade: 100 =============================================================

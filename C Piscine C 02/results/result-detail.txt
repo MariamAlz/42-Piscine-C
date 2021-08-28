@@ -1,0 +1,252 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+lab2r4s14.42abudhabi.ae
+Darwin 19.6.0 x86_64
+$> date
+Wed Aug 18 03:35:38 +04 2021
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42abudhabi.ae:vogsphere/intra-uuid-47b68612-00c1-4c36-bb97-dd99984d108f-3728518
+
+= Git history ==================================================================
+$> git -C /tmp/tmpEIVqEY/user log --pretty='%H - %an, %ad : %s'
+c5152d4fd5f8315c477ce62c9b72ee77153c1203 - Mariam Alzaabi, Wed Aug 18 01:49:51 2021 +0400 : c02
+
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpEIVqEY/user
+total 8
+-rw-r--r--  1 root  wheel  1594 Aug 18 03:35 __GIT_HISTORY
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex00
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex01
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex02
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex03
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex04
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex05
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex06
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex07
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex08
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex09
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex10
+drwxr-xr-x  4 root  wheel   128 Aug 18 03:35 ex11
+
+/tmp/tmpEIVqEY/user/ex00:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1063 Aug 18 03:35 ft_strcpy.c
+
+/tmp/tmpEIVqEY/user/ex01:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1127 Aug 18 03:35 ft_strncpy.c
+
+/tmp/tmpEIVqEY/user/ex02:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1109 Aug 18 03:35 ft_str_is_alpha.c
+
+/tmp/tmpEIVqEY/user/ex03:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1081 Aug 18 03:35 ft_str_is_numeric.c
+
+/tmp/tmpEIVqEY/user/ex04:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1083 Aug 18 03:35 ft_str_is_lowercase.c
+
+/tmp/tmpEIVqEY/user/ex05:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1083 Aug 18 03:35 ft_str_is_uppercase.c
+
+/tmp/tmpEIVqEY/user/ex06:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1082 Aug 18 03:35 ft_str_is_printable.c
+
+/tmp/tmpEIVqEY/user/ex07:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1079 Aug 18 03:35 ft_strupcase.c
+
+/tmp/tmpEIVqEY/user/ex08:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1080 Aug 18 03:35 ft_strlowcase.c
+
+/tmp/tmpEIVqEY/user/ex09:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1436 Aug 18 03:35 ft_strcapitalize.c
+
+/tmp/tmpEIVqEY/user/ex10:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1218 Aug 18 03:35 ft_strlcpy.c
+
+/tmp/tmpEIVqEY/user/ex11:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 18 03:35 .DS_Store
+-rw-r--r--  1 root  wheel  1310 Aug 18 03:35 ft_putstr_non_printable.c
+
+= ex00 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcpy.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strcpy.c -o user_exe
+
+= Test 1 ===================================================
+$> ./phc4ape2hjfrcd8os8hru6ha
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex01 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strncpy.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strncpy.c -o user_exe
+
+= Test 1 ===================================================
+$> ./yv7jv9e8h9m8jpa6xut9h13b
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex02 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_alpha.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_str_is_alpha.c -o user_exe
+
+= Test 1 ===================================================
+$> ./l62zti92v9hgwt1u8gvx33un
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex03 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_numeric.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_str_is_numeric.c -o user_exe
+
+= Test 1 ===================================================
+$> ./aked092ef7nkd0rtlobcqtz8
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex04 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_lowercase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_str_is_lowercase.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./vzrbp7x357ywniamf05214sl
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex05 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_uppercase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_str_is_uppercase.c -o user_exe
+
+= Test 1 ===================================================
+$> ./475f7nt39eml3py2kw5usipy
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex06 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_str_is_printable.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_str_is_printable.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./oqed904sq2cndlut37zdf801
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex07 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strupcase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strupcase.c -o user_exe
+
+= Test 1 ===================================================
+$> ./w92hodsou6cp85kz3kwciv2z
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex08 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlowcase.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_strlowcase.c -o user_exe
+
+= Test 1 ===================================================
+$> ./g4ht2olkblby1bjqmh7itzln
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex09 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strcapitalize.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strcapitalize.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./qkcn1rhamidsbiahyfm4jxha
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex10 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_strlcpy.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror ft_strlcpy.c main.c -o user_exe
+
+= Test 1 ===================================================
+$> ./dr5a55e3rw4lkt2vmgqahlqg
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex11 =========================================================================
+$> /usr/bin/norminette -R CheckForbiddenSourceHeader ft_putstr_non_printable.c | grep -E '^(Error|Warning)'
+
+$> gcc -Wextra -Wall -Werror main.c ft_putstr_non_printable.c -o user_exe
+
+= Test 1 ===================================================
+$> ./ixsgfsgp1ysfdyb7wsqxlhwa
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex12 =========================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 85 ==============================================================

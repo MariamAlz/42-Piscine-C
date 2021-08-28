@@ -1,0 +1,173 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+lab1r1s3.42abudhabi.ae
+Darwin 19.6.0 x86_64
+$> date
+Sun Aug 22 04:48:13 +04 2021
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42abudhabi.ae:vogsphere/intra-uuid-ea942aca-b672-44dd-a78c-fb2c4e07f0f7-3707825
+
+= Git history ==================================================================
+$> git -C /tmp/tmps0ycXn/user log --pretty='%H - %an, %ad : %s'
+b2be26005f13c6aea4ef952cdf879bbc8cc64325 - Mariam Alzaabi, Sun Aug 22 03:41:26 2021 +0400 : shell00
+
+= Collected files ==========================================
+$> ls -lAR /tmp/tmps0ycXn/user
+total 8
+-rw-r--r--  1 root  wheel  846 Aug 22 04:48 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Aug 22 04:48 ex00
+drwxr-xr-x  3 root  wheel   96 Aug 22 04:48 ex01
+drwxr-xr-x  4 root  wheel  128 Aug 22 04:48 ex02
+drwxr-xr-x  4 root  wheel  128 Aug 22 04:48 ex03
+drwxr-xr-x  4 root  wheel  128 Aug 22 04:48 ex04
+drwxr-xr-x  3 root  wheel   96 Aug 22 04:48 ex05
+drwxr-xr-x  4 root  wheel  128 Aug 22 04:48 ex06
+drwxr-xr-x  4 root  wheel  128 Aug 22 04:48 ex07
+drwxr-xr-x  4 root  wheel  128 Aug 22 04:48 ex08
+drwxr-xr-x  4 root  wheel  128 Aug 22 04:48 ex09
+
+/tmp/tmps0ycXn/user/ex00:
+total 8
+-rw-r--r--  1 root  wheel  2 Aug 22 04:48 z
+
+/tmp/tmps0ycXn/user/ex01:
+total 8
+-rw-r--r--  1 root  wheel  2048 Aug 22 04:48 testShell00.tar
+
+/tmp/tmps0ycXn/user/ex02:
+total 32
+-rw-r--r--  1 root  wheel  6148 Aug 22 04:48 .DS_Store
+-rw-r--r--  1 root  wheel  6144 Aug 22 04:48 exo2.tar
+
+/tmp/tmps0ycXn/user/ex03:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 22 04:48 .DS_Store
+-rw-r--r--  1 root  wheel   331 Aug 22 04:48 klist.txt
+
+/tmp/tmps0ycXn/user/ex04:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 22 04:48 .DS_Store
+-rw-r--r--  1 root  wheel     8 Aug 22 04:48 midLS
+
+/tmp/tmps0ycXn/user/ex05:
+total 8
+-rw-r--r--  1 root  wheel  23 Aug 22 04:48 git_commit.sh
+
+/tmp/tmps0ycXn/user/ex06:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 22 04:48 .DS_Store
+-rw-r--r--  1 root  wheel    53 Aug 22 04:48 git_ignore.sh
+
+/tmp/tmps0ycXn/user/ex07:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 22 04:48 .DS_Store
+-rw-r--r--  1 root  wheel   538 Aug 22 04:48 b
+
+/tmp/tmps0ycXn/user/ex08:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 22 04:48 .DS_Store
+-rw-r--r--  1 root  wheel    79 Aug 22 04:48 clean
+
+/tmp/tmps0ycXn/user/ex09:
+total 24
+-rw-r--r--  1 root  wheel  6148 Aug 22 04:48 .DS_Store
+-rw-r--r--  1 root  wheel    21 Aug 22 04:48 ft_magic
+
+= ex00 =========================================================================
+$> diff -U 3 z ref_output | cat -e
+
+Diff OK :D
+Grade: 5
+
+= ex01 =========================================================================
+Grade: 5
+
+= ex02 =========================================================================
+Grade: 10
+
+= ex03 =========================================================================
+Grade: 10
+
+= ex04 =========================================================================
+$> sh ./test_midls.sh
+./test_midls.sh: line 4: sleep: command not found
+./test_midls.sh: line 6: sleep: command not found
+./test_midls.sh: line 8: sleep: command not found
+./test_midls.sh: line 10: sleep: command not found
+./test_midls.sh: line 12: sleep: command not found
+./test_midls.sh: line 14: sleep: command not found
+./test_midls.sh: line 16: sleep: command not found
+./test_midls.sh: line 18: sleep: command not found
+./test_midls.sh: line 20: sleep: command not found
+./test_midls.sh: line 29: sleep: command not found
+< our file, > your file
+ok
+
+Grade: 10
+
+= ex05 =========================================================================
+$> diff -U 3 user_output test_output | cat -e
+
+Diff OK :D
+OK
+Grade: 10
+
+= ex06 =========================================================================
+$> diff -U 3 user_output test_output | cat -e
+
+Diff OK :D
+OK
+Grade: 10
+
+= ex07 =========================================================================
+$> diff -U 3 b 42b | cat -e
+
+Diff OK :D
+Grade: 10
+
+= ex08 =========================================================================
+$> sh ./test_clean.sh
+./test/.7~
+./test/test/#2#
+./test/test/titi/4~
+./test/test/titi/#4#
+./test/test/2~
+./test/#1#
+./test/titi/3~
+./test/titi/test/#5#
+./test/titi/test/5~
+./test/titi/#3#
+./test/1~
+ok
+
+Grade: 15
+
+= ex09 =========================================================================
+$> sh ./test_magic.sh
+-n testing ft_magic 1/2 ...
+/usr/share/file/magic, 0: Warning: using regular magic file `correct_magic'
+/usr/share/file/magic, 0: Warning: using regular magic file `./ft_magic'
+< our file, > your file
+[OK]
+-n testing ft_magic 2/2 ...
+/usr/share/file/magic, 0: Warning: using regular magic file `correct_magic'
+/usr/share/file/magic, 0: Warning: using regular magic file `./ft_magic'
+< our file, > your file
+[OK]
+
+Grade: 15
+
+= Final grade: 100 =============================================================
